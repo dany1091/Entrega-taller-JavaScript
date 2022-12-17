@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Llenar un arreglo de tamaño n</h2>
+
+<p id="demo"></p>
+
+<script>
+let captura = prompt("Ingresa la cantidad", 0); 
+let numero = 0
+let lista = [];
+
+if(captura != null && captura != ""){
+	numero = parseInt(captura) //asigno el numero
+}
+
+if(numero % 2 == 0) {
+	alert("El valor ingresado debe ser impar")
+} else {
+
+  for (let i = 1; i <= numero; i++) {
+      if(i % 2 == 0) {
+          lista.push(i)
+      } 
+  }
+  alert(lista)
+}
+
+</script>
+
+</body>
+</html>

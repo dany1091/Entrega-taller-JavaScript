@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Negativos y positivos</h2>
+
+<p id="demo"></p>
+
+<script>
+let captura = prompt("Ingresa la cantidad de numeros", 0); 
+let rango = 0;
+let positivo = 0;
+let negativo = 0;
+let arreglo = []
+
+if(captura != null && captura != ""){
+	rango = parseInt(captura) 
+}
+
+for (let i = 1; i <= rango; i++) {
+	let capturaNumero = prompt("Ingresa el numero", 0); 
+    let numero = 0;
+	if(capturaNumero != null && capturaNumero != ""){
+		numero = parseInt(capturaNumero)
+if(numero < 0){
+        	negativo += 1 // negativo = negativo + 1
+        } else {
+        	positivo += 1 // positivo = positivo + 1
+        }
+        arreglo.push(numero)
+	}
+}
+
+alert("Lista : " + arreglo)
+alert("Cantidad negativos : " + negativo)
+alert("Cantidad positivos : " + positivo)
+
+</script>
+
+</body>
+</html>

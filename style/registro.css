@@ -1,0 +1,65 @@
+.contenedor_principal{
+    align-items: center;
+}
+form{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.contenedor_img{
+    text-align: center;
+}
+.img_shop{
+    width: 300px;
+}
+
+form>input{
+    width: 500px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    border-color: rgb(23, 196, 196);
+    border-top-style: none;
+    font-size: 19px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+form>button{
+    background-color: aquamarine;
+    color: rgb(23, 6, 177);
+    padding: 15px;
+    width: 20%;
+    margin: 9px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Slabo 27px', serif;
+    border-color: rgb(20, 202, 202);
+    box-shadow: 5px 5px 5px aqua;
+}
+
+form>button:hover{
+    color: rgb(15, 15, 13);
+    width: 15%;
+    background-color: aqua;
+}
+
+.recordarcontraseña{
+    padding-top: 25px;
+    font-size: 19px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+form>input:focus{
+    outline: none;
+}
+
+.contenedor_home{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+textarea{
+    max-width: 30%;
+    max-height: 200px;
+    min-width: 15%;
+    min-height: 25px;
+}

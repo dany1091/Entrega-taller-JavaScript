@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Busqueda de primos</h2>
+
+<script>
+
+let captura = prompt("Ingrese el rango", 0);// ingresaron 10
+let numero = 0;
+
+if(captura != null && captura != ""){
+	numero = parseInt(captura) //asigno el numero
+}
+//recorre los 10 numeros empezando del 1
+for (let i = 1; i <= numero; i++) {
+
+ if (esPrimo(i)) { // si es primo muestra el mensaje  = el numero actual
+    alert("mensaje :" + i)
+  }
+}
+function esPrimo(numero) {
+	//recorrer desde el 2 hasta el actual
+  for (var i = 2; i < numero; i++) {
+	
+    if (numero % i === 0) {
+    	alert("valor no primo" + numero)
+      return false;
+    }
+  }
+  //si el encuentra un false significa que no es primo 
+  alert("valor final" + numero)
+//si cumple retorna true	
+  return numero !== 1;
+}
+
+</script>
+
+</body>
+</html>

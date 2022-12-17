@@ -1,0 +1,28 @@
+body{
+    font-family: 'Silkscreen', cursive;
+}
+
+table{
+    border-collapse: collapse;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 5px 5px 10px rgb(232, 234, 241);
+    background-image: url("../image/");
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-color: rgb(162, 224, 171);
+}
+
+tr,td{
+    border-style: ridge;
+    padding: 18px;
+}
+
+tr>th{
+    background-color: rgb(35, 35, 187);
+}
+
+tbody>tr:hover{
+    background-color: rgb(50, 207, 58);
+}

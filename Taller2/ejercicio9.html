@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Base y exponente</h2>
+
+<p id="demo"></p>
+
+<script>
+let capturaBase = prompt("Ingresa la base", 0); 
+let capturaEx = prompt("Ingresa el exponente", 0); 
+let base = 0;
+let exponente = 0;
+
+if(capturaBase != null && capturaBase != ""){
+	base = parseInt(capturaBase) //asigno el numero
+}
+
+if(capturaEx != null && capturaEx != ""){
+	exponente = parseInt(capturaEx) //asigno el numero
+}
+
+let total = base;
+for (let i = 1; i < capturaEx; i++) {
+ 	//total += (base * base)
+    total = total * base
+    alert("veces:" + i + "total :" + total) //se ve como incrementa
+}
+
+alert(total)
+
+</script>
+
+</body>
+</html>

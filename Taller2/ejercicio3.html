@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>3 ejercicio</h1>
+<h2>Suma productos</h2>
+
+<button onclick="myFunction()">calcular</button>
+
+<script>
+function myFunction() {
+  let producto = 0 //valor inicial es 0.
+
+  for (let i = 1; i <= 10; i++) { //ciclo va del 1 hasta el 10
+  let nuevoProducto = prompt("Digite el valor del producto " + i, 0);
+  if (nuevoProducto != null && nuevoProducto != ""){
+    producto = producto + parseInt(nuevoProducto);
+  }
+  	
+    //obtiene el valor del promp "ventana emergente que pide valor" y toma ese valor y lo suma con el mismo.
+  }
+alert("Total : " + producto);
+}
+</script>
+
+</body>
+</html>

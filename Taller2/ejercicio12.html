@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Llenar un arreglo con los primeros 100 numeros...</h2>
+
+<p id="demo"></p>
+
+<script>
+let lista = [];
+let n1 = 0, n2 = 1, siguienteValor;
+let number = 100 - 2;
+let contador = 1;
+
+siguienteValor = n1 + n2;
+
+lista.push(0)
+lista.push(1)
+
+while (contador <= number) {
+
+    // agrega el siguiente valor 
+	lista.push(siguienteValor);
+    n1 = n2;
+    n2 = siguienteValor;
+    siguienteValor = n1 + n2;
+    contador++
+}
+
+alert(lista)
+
+</script>
+
+</body>
+</html>

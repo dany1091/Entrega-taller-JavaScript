@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arithmetic</h2>
+<p>Salario de empleado segun parametros</p>
+<button onclick="myFunction()">calcular</button>
+<input type="text" placeholder="Digite su salario neto" id="salario"><br>
+<p>resultado</p>
+<p id="demo1"></p>
+
+
+<script>
+
+function myFunction() {
+let salario = document.getElementById("salario").value;
+let pension = 1;
+let transporte = 0;
+let subsidio = 0;
+
+if(salario < 700000){
+    pension = 2;
+    transporte = 6; 
+} else if(salario >= 700000 && salario < 1000000){
+    pension = 4
+    subsidio = 12000
+} else {
+    pension = 6 
+}
+
+let resultado = salario - ((pension * salario) / 100)
+if (transporte > 0){
+    resultado = resultado + ((transporte * salario) / 100)
+}
+resultado = resultado + subsidio
+
+document.getElementById("demo1").innerHTML = resultado;
+}
+</script>
+
+</body>
+</html>

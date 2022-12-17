@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>4 ejercicio</h1>
+<h2>Calcular nota</h2>
+
+<button onclick="myFunction()">Calcular</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let nota = 0 //valor inicial es 0.
+  let aprobo = 0 //valor inicial es 0.
+  let reprobo = 0 //valor inicial es 0.
+
+  for (let i = 1; i <= 12; i++) { //ciclo va del 1 hasta el 12
+    let captura = prompt("Digite la nota " + i, 0)
+if(captura != null && captura != "") {
+    //si es diferente de nulo y diferent de vacio asigna el valor
+  		nota = parseInt(captura);
+    }
+    //obtiene el valor del promp "ventana emergente que pide valor" y toma ese valor y lo suma con el mismo.
+    if(nota > 5) {
+    	aprobo += 1
+  	} else {
+		reprobo += 1
+    }
+  }
+  
+  alert("Total aprobadas : " + aprobo);  
+  alert("Total reprobadas : " + reprobo);
+}
+</script>
+
+</body>
+</html>

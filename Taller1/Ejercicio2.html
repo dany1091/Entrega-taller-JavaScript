@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arithmetic</h2>
+<p>Calculadora de operaciones</p>
+
+<input type="text" placeholder="Digite un numero" id="primero"><br>
+<input type="text" placeholder="Digite un numero" id="segundo"><br>
+<button onclick="suma()">+</button>
+<button onclick="resta()">-</button>
+<button onclick="multiplicacion()">x</button>
+<button onclick="division()">/</button>
+<p>resultado</p>
+<p id="demo1"></p>
+
+
+<script>
+console.log(suma)
+function suma() {
+let primerValor = document.getElementById("primero").value;
+let segundoValor = document.getElementById("segundo").value;
+document.getElementById("demo1").innerHTML = parseInt(primerValor) + parseInt(segundoValor);
+}
+
+function resta() {
+let primerValor = document.getElementById("primero").value;
+let segundoValor = document.getElementById("segundo").value;
+document.getElementById("demo1").innerHTML = primerValor - segundoValor;
+}
+
+function multiplicacion() {
+let primerValor = document.getElementById("primero").value;
+let segundoValor = document.getElementById("segundo").value;
+document.getElementById("demo1").innerHTML = primerValor * segundoValor;
+}
+
+function division() {
+let primerValor = document.getElementById("primero").value;
+let segundoValor = document.getElementById("segundo").value;
+document.getElementById("demo1").innerHTML = primerValor / segundoValor;
+}
+</script>
+
+</body>
+</html>

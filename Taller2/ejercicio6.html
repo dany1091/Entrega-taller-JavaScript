@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Digite las notas</h2>
+
+
+<script>
+
+let total = ""
+let cantidad = 0
+let captura = prompt("Ingrese la cantidad de notas ", 0)
+    
+if(captura != null && captura != "") {
+  //si es diferente de nulo y diferente de vacio asigna el valor
+  cantidad = parseInt(captura);
+} 
+
+for (let i = 1; i <= cantidad; i++) {
+    let capturaNota = prompt("Ingrese la nota", 0)
+    if(capturaNota != null && capturaNota != "") {
+//si es diferente de nulo y diferente de vacio asigna el valor
+    	total = total + capturaNota + "\n"
+    } 
+}
+
+alert("listado notas  : \n" + total);
+
+</script>
+
+</body>
+</html>

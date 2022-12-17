@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ordena salarios</h2>
+
+<script>
+
+let captura = prompt("Ingresa la cantidad de salarios", 0); 
+let numero = 0;
+let lista = [];
+
+if(captura != null && captura != ""){
+	numero = parseInt(captura) //asigno el numero
+}
+
+for (let i = 1; i <= numero; i++) {
+ 	let capturaSalario = prompt("Ingrese salario"); 
+	let salario = 0;
+    
+	if(capturaSalario != null && capturaSalario != ""){
+      salario = parseInt(capturaSalario)
+lista.push(salario)
+	}
+}
+
+lista.sort(function(a, b){return a - b});
+alert(lista)
+
+</script>
+
+</body>
+</html>
